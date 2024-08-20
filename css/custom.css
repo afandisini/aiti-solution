@@ -20,7 +20,11 @@
 
 .header-mode-dark {
     background: #333;
-    background: #444;
+    background: rgb(40,40,40);
+    background: -moz-linear-gradient(150deg, rgba(40,40,40,0.6) 0%, rgba(50,50,50,0.6) 38%, rgba(60,60,60,0.6) 68%, rgba(70,70,70,0.6) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(40,40,40,0.6) 0%, rgba(50,50,50,0.6) 38%, rgba(60,60,60,0.6) 68%, rgba(70,70,70,0.6) 100%);
+    background: linear-gradient(150deg, rgba(40,40,40,0.6) 0%, rgba(50,50,50,0.6) 38%, rgba(60,60,60,0.6) 68%, rgba(70,70,70,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#464646",GradientType=1);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
