@@ -19,12 +19,11 @@
 }
 
 .header-mode-dark {
-    background: #333;
-    background: rgb(40,40,40);
-    background: -moz-linear-gradient(150deg, rgba(40,40,40,0.6) 0%, rgba(50,50,50,0.6) 38%, rgba(60,60,60,0.6) 68%, rgba(70,70,70,0.6) 100%);
-    background: -webkit-linear-gradient(150deg, rgba(40,40,40,0.6) 0%, rgba(50,50,50,0.6) 38%, rgba(60,60,60,0.6) 68%, rgba(70,70,70,0.6) 100%);
-    background: linear-gradient(150deg, rgba(40,40,40,0.6) 0%, rgba(50,50,50,0.6) 38%, rgba(60,60,60,0.6) 68%, rgba(70,70,70,0.6) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#464646",GradientType=1);
+    background: rgb(40, 40, 40);
+    background: -moz-linear-gradient(150deg, rgba(40, 40, 40, 0.6) 0%, rgba(50, 50, 50, 0.6) 38%, rgba(60, 60, 60, 0.6) 68%, rgba(70, 70, 70, 0.6) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(40, 40, 40, 0.6) 0%, rgba(50, 50, 50, 0.6) 38%, rgba(60, 60, 60, 0.6) 68%, rgba(70, 70, 70, 0.6) 100%);
+    background: linear-gradient(150deg, rgba(40, 40, 40, 0.6) 0%, rgba(50, 50, 50, 0.6) 38%, rgba(60, 60, 60, 0.6) 68%, rgba(70, 70, 70, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828", endColorstr="#464646", GradientType=1);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,12 +32,10 @@
 }
 
 .header-mode-light {
-    background: #444;
-    background: rgb(233,189,174);
-    background: -moz-linear-gradient(150deg, rgba(233,189,174,0.6) 0%, rgba(164,200,236,0.6) 38%, rgba(186,237,186,0.6) 68%, rgba(246,230,165,0.6) 100%);
-    background: -webkit-linear-gradient(150deg, rgba(233,189,174,0.6) 0%, rgba(164,200,236,0.6) 38%, rgba(186,237,186,0.6) 68%, rgba(246,230,165,0.6) 100%);
-    background: linear-gradient(150deg, rgba(233,189,174,0.6) 0%, rgba(164,200,236,0.6) 38%, rgba(186,237,186,0.6) 68%, rgba(246,230,165,0.6) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9bdae",endColorstr="#f6e6a5",GradientType=1);
+    background: rgb(233, 189, 174);
+    background: -moz-linear-gradient(150deg, rgba(233, 189, 174, 0.6) 0%, rgba(164, 200, 236, 0.6) 38%, rgba(186, 237, 186, 0.6) 68%, rgba(246, 230, 165, 0.6) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(233, 189, 174, 0.6) 0%, rgba(164, 200, 236, 0.6) 38%, rgba(186, 237, 186, 0.6) 68%, rgba(246, 230, 165, 0.6) 100%);
+    background: linear-gradient(150deg, rgba(233, 189, 174, 0.6) 0%, rgba(164, 200, 236, 0.6) 38%, rgba(186, 237, 186, 0.6) 68%, rgba(246, 230, 165, 0.6) 100%);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +43,7 @@
 }
 
 .header-mode-light .img-banner {
-    filter: brightness(0.699);
+    filter: brightness(0.8);
 }
 
 .navbar-bg {
@@ -69,9 +66,9 @@ a.nav-link {
     background-repeat: repeat;
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
+    background-clip: text;
     -moz-text-fill-color: transparent;
     font-weight: 800;
     font-size: 24pt;
@@ -85,8 +82,7 @@ a.nav-link {
     background-repeat: repeat;
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     font-weight: 800;
