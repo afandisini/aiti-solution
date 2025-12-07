@@ -1,17 +1,14 @@
-/* AITI Button (MIT License) */
-.aiti-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: .55rem;
-  padding: .6rem .95rem;
-  border-radius: var(--aiti-radius);
-  border: 0;
-  background: var(--aiti-primary);
-  color: var(--aiti-primary-contrast);
-  box-shadow: var(--aiti-shadow);
-  font: 500 14px system-ui;
-  cursor: pointer;
-  transition: .15s ease;
+/* AITI Button (MIT) */
+.aiti-btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.6rem .95rem;border-radius:var(--aiti-radius);border:0;
+  background:var(--aiti-primary);color:var(--aiti-primary-contrast);
+  box-shadow:var(--aiti-shadow);
+  font:500 14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  cursor:pointer;transition:transform .06s ease,filter .2s ease,opacity .2s ease;
+  text-decoration:none;
 }
-.aiti-btn:hover { filter: brightness(1.07); }
-.aiti-btn:active { transform: scale(.97); }
+.aiti-btn:hover{ filter:brightness(1.05); }
+.aiti-btn:active{ transform:translateY(1px) scale(.995); }
+.aiti-btn.outline{ background:transparent;color:var(--aiti-primary);border:1px solid var(--aiti-primary);box-shadow:none; }
+.aiti-btn.ghost{ background:transparent;color:inherit;border:0;box-shadow:none; }

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Getting Started — AITI-Solutions CSS</title>
+  <link rel="stylesheet" href="../src/aiti/css/aiti.css">
+  <link rel="stylesheet" href="./_docs.css">
+</head>
+<body class="aiti-reset">
+  <div class="docs-breadcrumb"><a href="./index.html">Docs</a> / Getting Started</div>
+  <main class="aiti-container docs-main">
+    <section class="aiti-card">
+      <div class="aiti-card-header">Instalasi</div>
+      <ol class="docs-list">
+        <li>Pastikan file CSS tersedia di <code>src/aiti/css/aiti.css</code>.</li>
+        <li>Import di HTML:
+<pre><code>&lt;link rel="stylesheet" href="/src/aiti/css/aiti.css"&gt;</code></pre>
+        </li>
+        <li>Opsional: gunakan utilitas dasar:
+<pre><code>&lt;div class="aiti-container"&gt;...&lt;/div&gt;</code></pre>
+        </li>
+      </ol>
+    </section>
+
+    <section class="aiti-card">
+      <div class="aiti-card-header">Theming</div>
+      <p>Ubah variabel di <code>:root</code> (lihat <code>aiti.css</code>):</p>
+<pre><code>:root{
+  --aiti-primary:#0d6efd;
+  --aiti-radius:12px;
+}</code></pre>
+      <p>Mode gelap mengikuti <code>prefers-color-scheme: dark</code>.</p>
+    </section>
+
+    <section class="aiti-card">
+      <div class="aiti-card-header">Aksesibilitas</div>
+      <ul class="docs-list">
+        <li>Pastikan kontras warna tombol memadai.</li>
+        <li>Gunakan <code>&lt;button&gt;</code> untuk aksi dan <code>&lt;a&gt;</code> untuk tautan.</li>
+        <li>Tambahkan fokus ring sesuai kebutuhan proyek.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
