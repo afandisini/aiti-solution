@@ -1,0 +1,9 @@
+/* AITI Card (MIT License) */
+.aiti-card {
+  background: #fff;
+  border: var(--aiti-border);
+  border-radius: var(--aiti-radius);
+  box-shadow: var(--aiti-shadow);
+  padding: 1rem;
+}
+.aiti-card-header { font-weight: 600; margin-bottom: .5rem; }
