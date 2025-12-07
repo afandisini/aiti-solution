@@ -1,19 +1,21 @@
-/* AITI-Solutions CSS (MIT License)
- * (c) 2025 Afan Hermawan
+/* AITI-Solutions CSS
+ * (c) 2025 Afan Hermawan — MIT (see LICENSE)
  */
+:root{
+  --aiti-primary:#004a99;
+  --aiti-primary-contrast:#ffffff;
+  --aiti-radius:14px;
+  --aiti-shadow:0 8px 24px rgba(0,0,0,.08);
+  --aiti-border:1px solid rgba(0,0,0,.08);
+}
+.aiti-reset{ box-sizing:border-box; }
+.aiti-reset *, .aiti-reset *::before, .aiti-reset *::after{ box-sizing:inherit; }
+.aiti-container{ width:min(1200px,100% - 2rem); margin-inline:auto; }
 
-:root {
-  --aiti-primary: #004a99;
-  --aiti-primary-contrast: #ffffff;
-  --aiti-radius: 14px;
-  --aiti-shadow: 0 8px 24px rgba(0,0,0,.08);
-  --aiti-border: 1px solid rgba(0,0,0,.08);
+@media (prefers-color-scheme: dark){
+  :root{ --aiti-border:1px solid rgba(255,255,255,.12); --aiti-shadow:0 8px 24px rgba(0,0,0,.35); }
 }
 
-.aiti-container {
-  width: min(1200px, 100% - 2rem);
-  margin-inline: auto;
-}
-
+/* komponen dasar */
 @import url("./components/button.css");
 @import url("./components/card.css");

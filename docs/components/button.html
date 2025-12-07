@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Button — AITI-Solutions CSS</title>
+  <link rel="stylesheet" href="../../src/aiti/css/aiti.css">
+  <link rel="stylesheet" href="../_docs.css">
+  <script type="module" src="../../src/aiti/js/aiti.js"></script>
+</head>
+<body class="aiti-reset">
+  <div class="docs-breadcrumb"><a href="../index.html">Docs</a> / <a href="./button.html">Components</a> / Button</div>
+  <main class="aiti-container docs-main">
+    <section class="aiti-card">
+      <div class="aiti-card-header">Varian</div>
+      <div class="docs-demo">
+        <button class="aiti-btn" id="btn1">Primary</button>
+        <a href="#" class="aiti-btn outline" id="btn2">Outline</a>
+        <button class="aiti-btn ghost" id="btn3">Ghost</button>
+      </div>
+<pre><code>&lt;button class="aiti-btn"&gt;Primary&lt;/button&gt;
+&lt;a class="aiti-btn outline"&gt;Outline&lt;/a&gt;
+&lt;button class="aiti-btn ghost"&gt;Ghost&lt;/button&gt;</code></pre>
+      <p>Tips: boleh sisip ikon SVG di tombol (spacing pakai <code>gap</code>).</p>
+    </section>
+  </main>
+  <script type="module">
+    import { ripple, ready } from '../../src/aiti/js/aiti.js';
+    ready(()=>['btn1','btn2','btn3'].forEach(id => ripple(document.getElementById(id))));
+  </script>
+</body>
+</html>
